@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    color: #fff;
+    background-image: linear-gradient(to right, #000066, #000033);
+    font-size: 1.3em;
+    font-weight: 900;
+}
+nav{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+}
+a:link{
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    color: cornflowerblue;
+}
+.nav-list{
+    display: flex;
+    color: #fff;
+}
+#nav-list-item{
+    color: #fff;
+    padding-left: 20px;
+    list-style: none;
+    text-align: center;
+}
+.nav-button{
+    margin-left: auto;
+}
+#sign-button{
+  padding: 15px;
+  margin: 5px;
+  float: right;
+  color: #fff;
+  background-color: #000066;
+  border: none;
+}
+#sign-button:hover{
+    background-image: linear-gradient(to right, #000066, #000033);
+    border:none;
+}
+hr{
+    border-bottom: #000;
+}
+header{
+    text-align: center;
+}
+#number-bar,#searchbar{
+    border-color: #fff;
+    background-color: #000033;
+}
+.headcards-colletion{
+    display: flex;
+    justify-content: center;
+}
+.headcards{
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-style: solid;
+    margin: 15px;
+    word-wrap: break-word;
+    width: 170px;
+}
+.num-convert{
+    text-align: center;
+}
+.blue .green .yellow .red{
+    padding: 20px;
+    margin: 30px;
+    color: #fff;
+    border: none;
+}
+.blue{
+    background-color: #000066;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.card-sec{
+    display: flex;
+}
+.card{
+    margin: 20px;
+    padding: 15px;
+    width: 33%;
+    color: #000;
+}
