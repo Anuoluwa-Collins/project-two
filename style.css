@@ -111,6 +111,7 @@ body.open .sidebar-logo {
 .sidebar:hover{
   transition: 0.5s;
   background-color: aqua;
+  cursor: pointer;
 }
 
 .btn:hover{
