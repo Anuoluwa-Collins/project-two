@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -145,6 +146,8 @@ body.open .sidebar button > span {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: 'Rock Salt', Times, serif;
+  font-weight: bold;
 }
 
 .contact{
@@ -152,7 +155,7 @@ body.open .sidebar button > span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(202, 188, 188, 0.575);
+  background-color: rgb(236, 236, 235);
 }
 
 .socials-list{
@@ -160,14 +163,13 @@ body.open .sidebar button > span {
   justify-content: space-between;
   width: 100%;
   padding: 20px;
-
 }
 li{
   list-style: none;
 }
 .card{
   background-color: #ffffff;
-  box-shadow: #000000;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.308);
   border-radius: 30px;
-  padding: 80px;
+  padding: 50px;
 }
