@@ -12,7 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <aside class="sidebar">
@@ -26,65 +29,112 @@
           <img src="./assets/blocklord-logo.png" class="sidebar-logo" />
         </header>
         <nav class="sidebar-nav">
-          <hr>
+          <hr />
           <section class="btn">
-          <a class="btn" href="./index.html">
-          <button  type="button">
-            <img src="./assets/icon-home.svg" />
-            <span>Home</span>
-          </button></a>
-          <hr>
+            <a class="btn" href="./index.html">
+              <button type="button">
+                <img src="./assets/icon-home.svg" />
+                <span>Home</span>
+              </button></a
+            >
+            <hr />
           </section>
           <section class="btn">
-          <a href="./about.html">
-          <button type="button">
-            <img src="./assets/about-description-help-svgrepo-com.svg" />
-            <span style="animation-delay: 0.1s">About</span>
-          </button></a>
-          <hr>
+            <a href="./about.html">
+              <button type="button">
+                <img src="./assets/about-description-help-svgrepo-com.svg" />
+                <span style="animation-delay: 0.1s">About</span>
+              </button></a
+            >
+            <hr />
           </section>
           <section class="btn">
-          <a href="./shop.html">
-          <button type="button">
-            <img src="./assets/shop-svgrepo-com.svg" />
-            <span style="animation-delay: 0.2s">Shop</span>
-          </button></a>
-          <hr>
+            <a href="./shop.html">
+              <button type="button">
+                <img src="./assets/shop-svgrepo-com.svg" />
+                <span style="animation-delay: 0.2s">Shop</span>
+              </button></a
+            >
+            <hr />
           </section>
           <section class="btn">
-          <a href="./policy.html">
-          <button type="button">
-            <img src="./assets/icon-accounts.svg" />
-            <span style="animation-delay: 0.3s">Policy</span>
-          </button></a>
-          <hr>
-        </section>
+            <a href="./policy.html">
+              <button type="button">
+                <img src="./assets/icon-accounts.svg" />
+                <span style="animation-delay: 0.3s">Policy</span>
+              </button></a
+            >
+            <hr />
+          </section>
         </nav>
       </div>
     </aside>
     <section class="head">
-      <h1>WE  ARE</h1>
+      <h1>WE ARE</h1>
       <h1>ELEVEN PROJECT</h1>
     </section>
     <section class="about">
-      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img src="image01.jpg" alt="">
-              <div>
-                Description 01
-              </div>
-            </li>
-            <li class="splide__slide">
-              <img src="image02.jpg" alt="">
-              <div>
-                Description 02
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <swiper-container
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="mySwiper"
+        speed="600"
+        parallax="true"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+      >
+        <div
+          slot="container-start"
+          class="parallax-bg"
+          data-swiper-parallax="-23%"
+        ></div>
+
+        <swiper-slide>
+          <div class="title" data-swiper-parallax="-300">Slide 1</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="title" data-swiper-parallax="-300">Slide 2</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="title" data-swiper-parallax="-300">Slide 3</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </swiper-slide>
+      </swiper-container>
     </section>
     <section class="contact">
       <h2>contact us via:</h2>
@@ -115,7 +165,7 @@
     <script type="text/javascript">
       const toggleSidebar = () => document.body.classList.toggle("open");
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
