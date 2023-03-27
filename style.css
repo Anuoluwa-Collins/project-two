@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   background: #ffffff;
+  font-family:'Cinzel', sans-serif ;
 }
 
 button {
