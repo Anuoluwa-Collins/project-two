@@ -25,6 +25,7 @@ button {
   overflow: hidden;
   top: 0;
   left: 0;
+  z-index: 99999;
   width: 72px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.11);
@@ -80,7 +81,6 @@ body.open .sidebar-logo {
 .sidebar-nav {
   padding-top: 10px;
   flex: 1 1 auto;
-  /* background-color: rgba(0, 0, 0, 0.308); */
 }
 
 .sidebar button {
@@ -153,13 +153,16 @@ body.open .sidebar button > span {
   font-family: 'Rock Salt', Times, serif;
   font-weight: bold;
 }
+
+
+/* about the team and slider */
 .about{
   padding: 10vw; 
   align-self: center;
 }
 
 .slide_text{
-  padding: 20%;
+  padding: 10%;
 }
 swiper-container {
   width: 100%;
@@ -173,11 +176,12 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5%;
 }
 
 swiper-slide img {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
 }
@@ -185,6 +189,16 @@ swiper-slide img {
 swiper-container {
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 768px) {
+  swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .slide_text{
+    font-size: 0.3 em;
+  }
 }
 .contact{
   display: flex;
@@ -210,7 +224,7 @@ li{
   padding: 50px;
 }
 
-/* about */
+/* about page*/
 .grid-container {
   height: 100vh;
   display: grid;
@@ -292,7 +306,7 @@ li{
   width: 90vw;
 }
 
-/* policy*/
+/* policy page*/
 
 .policy_main{
   display: flex;
@@ -321,5 +335,80 @@ li{
   .policy_text{
     border-left: none;
     border-top: 1px solid black;
+  }
+}
+
+/* shop page */
+
+.courts{
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d_court{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.d_court img{
+  height: 50%;
+  width: 50%;
+}
+
+#court_btn{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  /* font-size: 16px; */
+  font-weight: 600; 
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  outline: none;
+  width: 50%;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+#court_btn:disabled {
+  pointer-events: none;
+}
+
+#court_btn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#court_btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media (max-width: 428px){
+  .courts{
+    padding: 15%;
+  }
+  .d_court{
+    flex-direction: column;
+  }
+  .d_court img{
+    width: 100%;
+    height: 100%;
   }
 }
