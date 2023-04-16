@@ -377,3 +377,19 @@ li{
 }
 
 /* shop page */
+.shop_main{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.courts{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+#court_btn{
+  width: 60%;
+  padding: 20px;
+  border-radius: ;
+  
+}
