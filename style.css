@@ -368,7 +368,6 @@ li{
   .policy_main{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
   }
   .policy_text{
     border-left: none;
@@ -387,9 +386,22 @@ li{
   justify-items: center;
   align-items: center;
 }
-#court_btn{
+#tcourt_btn{
   width: 60%;
   padding: 20px;
-  border-radius: ;
+  border-radius: 999px;
+  background-color: black;
   
+}
+#courttext{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .courts{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
